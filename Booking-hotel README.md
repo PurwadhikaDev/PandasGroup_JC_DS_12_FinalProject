@@ -1,17 +1,21 @@
-<!-- ![gambar](https://www.planetware.com/wpimages/2020/07/portugal-best-holiday-resorts-anatara-vilamoura-algarve-resort.jpg) -->
 
 # Final Project : Hotel Booking Cancellation Prediction
 
-by : ayang mashar apip
+by : Pandas Team
+- Fardhina Amalia
+- Harry Kurniansyah
+- Rafif Abdul Aziz
+
+Dataset : hotel_bookings.csv
 
 <hr>
 
 ## Background
 
-Pada Project kali ini kami berperan sebagai tim Data Scientist untuk sebuah hotel di negara Portugal. sebagai Data Scientist, kami diminta untuk membuat sebuah model Machine Learning yang dapat memprediksi kemungkinan customer yang akan melakukan cancel. model ini nantinya akan digunakan oleh tim management dalam menentukan budget planning dan juga digunakan untuk meningkatkan revenue yang didapat dari jumlah reservasi. 
+Pada Project kali ini kami berperan sebagai tim Data Scientist untuk sebuah hotel di negara Portugal. sebagai Data Scientist, kami diminta untuk membuat sebuah model Machine Learning yang dapat memprediksi kemungkinan customer yang akan melakukan cancel. Model ini nantinya akan digunakan oleh tim management dalam menentukan budget planning dan juga digunakan untuk meningkatkan revenue yang didapat dari jumlah reservasi. 
 
 ## Problem 
-- Setiap hotel memiliki target penjualan setiap bulannya yang telah ditentukan oleh tim management hotel. target ini dibuat menggunakan budget planning sebagai strategi agar tim management dapat mencapai target yang telah ditentukan. Tim management hotel melakukan budget planning based on revenue setiap priode, revenue yang didapatkan berdasarkan dari jumlah reservasi kamar pada bulan itu. Budget planning tersebut menjadi landasan bagi management hotel untuk merencanakan strategi penjualan hotel agar mencapai target. Sehingga ketepatan memeperkirakan jumlah reservasi yang cancel booking dapat mempengaruhi keuntungan pada bulan itu. Sehingga model prediksi cancellation booking hotel ini dapat memberikan impact kepada tim management yaitu bisa memperkirakan budget planning hotel pada bulan itu dengan lebih tepat.
+- Setiap hotel memiliki target penjualan setiap bulannya yang telah ditentukan oleh tim management hotel. Target ini dibuat menggunakan budget planning sebagai strategi agar tim management dapat mencapai target yang telah ditentukan. Tim management hotel melakukan budget planning based on revenue setiap priode, revenue yang didapatkan berdasarkan dari jumlah reservasi kamar pada bulan itu. Budget planning tersebut menjadi landasan bagi management hotel untuk merencanakan strategi penjualan hotel agar mencapai target. Sehingga ketepatan memeperkirakan jumlah reservasi yang cancel booking dapat mempengaruhi keuntungan pada bulan itu. Sehingga model prediksi cancellation booking hotel ini dapat memberikan impact kepada tim management yaitu bisa memperkirakan budget planning hotel pada bulan itu dengan lebih tepat.
 
 - Model prediksi cancellation booking hotel ini dapat memberikan impact kepada tim management yaitu bisa memperkirakan budget planning hotel pada bulan itu dan mengetahui customer/reservation mana yang akan cancel, sehingga tim marketing/sales dapat memberikan treatment khusus kepada customer yang diprediksi berpotensi cancel dan tentu saja hal ini dilakukan untuk dapat memaksimalkan revenue hotel.
 
@@ -25,7 +29,7 @@ Goal yang ingin dicapai pada Project ini yaitu :
 
 ## Dataset
 
-https://www.kaggle.com/jessemostipak/hotel-booking-demand
+Dataset Diambil Dari: https://www.kaggle.com/jessemostipak/hotel-booking-demand
 
 ## Acknowledgements
 
@@ -58,7 +62,7 @@ Base Model yang telah dicoba kemudian diImprove dengan Polynomial dan Hyperparam
 ## Evaluation
 Setelah melakukan Hyperparameter Tuning, dilakukan Evaluation dengan membandingkan nilai Accuracy dari masing-masing model untuk memilih model yang terbaik.
 
-![AccScore]()
+![AccScore](img/AccuracyScore.png)
 
 ## Model Recommendation
 Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Polynomial dan Hyperparameter Tuning.
