@@ -33,6 +33,10 @@ Dataset Diambil Dari: https://www.kaggle.com/jessemostipak/hotel-booking-demand
 
 ## Acknowledgements
 
+Data ini ditulis dan disusun oleh Nuno Antonio, Ana Almeida, and Luis Nunes  Data in Brief, Volume 22, February 2019.
+
+Data source location : Both hotels are located in Portugal: H1 at the resort region of Algarve and H2 at the city of Lisbon
+
 The data is originally from the article https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5 Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
 
 Data source location : Both hotels are located in Portugal: H1 at the resort region of Algarve and H2 at the city of Lisbon
@@ -40,14 +44,14 @@ Data source location : Both hotels are located in Portugal: H1 at the resort reg
 <hr>
 
 ## Data Cleaning dan Exploratory Data Analysis
-Hal pertama yang dilakukan yaitu melakukan import Dataset dan package yang akan digunakan untuk Expolatory Data Analysis dan Modellig, 
-kemudian melakukan deskripsi data kemudian melakukan handling terhadap outliers dan Missing Value.
+Hal pertama yang dilakukan yaitu melakukan import Dataset dan package yang akan digunakan untuk Expolatory Data Analysis, 
+kemudian melakukan deskripsi data dan melakukan handling terhadap outliers dan Missing Value. Proses ini akan menghasilkan dataset baru yang sudah bersih dan siap digunakan untuk proses berikutnya yaitu EDA dan Modelling.
 Eksploratory Data Analysis dilakukan menggunakan crosstab dan groupby serta plot untuk menampilkan visualisasi data untuk mendapatkan insight dari data.
 
 <hr>
 
 ## Data Preparation
-Pada proses ini kami melakukan Features Engineering dengan melakukan Encoding, Adding Features dan Recategorize serta melihat correlation untuk melakukan Feature Selection sesuai kebutuhan modelling.
+Pada proses ini kami melakukan Features Engineering dengan melakukan Label Encoding dan One Hot Encoding pada kolom kategorik dan merubahnya menjadi numerik, kemudian kami melihat Correlation untuk melakukan Feature Selection dan melakukan drop kolom yang dinilai memiliki korelasi yang rendah terhadap kolom target sesuai kebutuhan modelling.
 
 <hr>
 
@@ -57,13 +61,25 @@ Sebelum melakukan modelling, kami melakukan split dataset untuk membagi dataset 
 - Decision Tree Regression
 - XGBoost Regresion
 
-Base Model yang telah dicoba kemudian diImprove dengan Polynomial dan Hyperparameter tuning untuk meningkatkan score agar mendapat score yang lebih baik.
+Masing-masing Base Model yang telah dicoba kemudian masuk ke proses Imporvement dengan menggunakan dua metode yaitu Polynomial dan Hyperparameter Tuning untuk meningkatkan score agar mendapat score yang lebih baik.
 
 ## Evaluation
-Setelah melakukan Hyperparameter Tuning, dilakukan Evaluation dengan membandingkan nilai Accuracy dari masing-masing model untuk memilih model yang terbaik.
+Setelah melakukan Polynomial dan Hyperparameter Tuning, dilakukan Evaluation dengan membandingkan nilai Accuracy dari masing-masing model untuk memilih model yang terbaik.
 
-![AccuracyScore](https://user-images.githubusercontent.com/79127874/120586898-94f53580-c45e-11eb-8cb4-dd14ae8a1e56.png)
+![AccuracyScore](https://user-images.githubusercontent.com/79127874/120594740-94af6700-c46b-11eb-9ebc-f5a3f7ac6df9.png)
+
 
 ## Model Recommendation
-Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning.
+Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning, karena model ini memiliki nilai Evaluation Matrix yang paling baik dibanding model yang lain. Parameter awal yang kami tentukan untuk model XGB adalah : 
+
+![param](https://user-images.githubusercontent.com/79127874/120598154-1ef9ca00-c470-11eb-86f2-3bdf8b3a40ac.png)
+
+kemudian kami melakukan Random Search untuk mendapatkan parameter terbaik dari Parameter yang telah kami tentukan sebelumnya dan diperoleh parameter terbaik 
+```
+- best.params: 'n_estimators' : 500, 'max_depth' : 10, 'learning_rate' : 0.1, 'gamma' : 0.1
+```
+Setelah melakukan Tuned terhadap model XGB dengan parameter terbaik yang telah didapatkan, diperoleh Evaluation Matrix sebagai berikut.
+![XGB](https://user-images.githubusercontent.com/79127874/120597948-e2c66980-c46f-11eb-83df-44b23a6cf6ee.png)
+
+
 
