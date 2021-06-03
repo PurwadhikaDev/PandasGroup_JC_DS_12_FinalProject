@@ -33,13 +33,10 @@ Dataset Diambil Dari: https://www.kaggle.com/jessemostipak/hotel-booking-demand
 
 ## Acknowledgements
 
-Data ini ditulis dan disusun oleh Nuno Antonio, Ana Almeida, and Luis Nunes  Data in Brief, Volume 22, February 2019.
+Data ini ditulis dan disusun oleh Nuno Antonio, Ana Almeida, and Luis Nunes pada artikel Data in Brief, Volume 22, February 2019.
+site : https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5
 
-Data source location : Both hotels are located in Portugal: H1 at the resort region of Algarve and H2 at the city of Lisbon
-
-The data is originally from the article https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5 Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida, and Luis Nunes for Data in Brief, Volume 22, February 2019.
-
-Data source location : Both hotels are located in Portugal: H1 at the resort region of Algarve and H2 at the city of Lisbon
+Lokasi pengambilan data : Kedua hotel berlokasi di Portugal, Hotel pertama berada di kawasan resort Algarve dan Hotel kedua berada di Kota Lisbon
 
 <hr>
 
