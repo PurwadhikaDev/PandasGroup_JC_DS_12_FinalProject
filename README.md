@@ -60,11 +60,14 @@ Sebelum melakukan modelling, kami melakukan split dataset untuk membagi dataset 
 
 Masing-masing Base Model yang telah dicoba kemudian masuk ke proses Imporvement dengan menggunakan dua metode yaitu Polynomial dan Hyperparameter Tuning untuk meningkatkan score agar mendapat score yang lebih baik.
 
+<hr>
+
 ## Evaluation
 Setelah melakukan Polynomial dan Hyperparameter Tuning, dilakukan Evaluation dengan membandingkan nilai Accuracy dari masing-masing model untuk memilih model yang terbaik.
 
 ![AccuracyScore](https://user-images.githubusercontent.com/79127874/120594740-94af6700-c46b-11eb-9ebc-f5a3f7ac6df9.png)
 
+<hr> 
 
 ## Model Recommendation
 Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning, karena model ini memiliki nilai Accuracy yang paling baik dibanding model yang lain. Parameter awal yang kami tentukan untuk model XGB adalah : 
@@ -79,5 +82,5 @@ Setelah melakukan Tuned terhadap model XGB dengan parameter terbaik yang telah d
 
 ![XGB](https://user-images.githubusercontent.com/79127874/120597948-e2c66980-c46f-11eb-83df-44b23a6cf6ee.png)
 
-
+<hr>
 
