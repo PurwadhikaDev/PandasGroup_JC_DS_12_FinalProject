@@ -67,7 +67,7 @@ Setelah melakukan Polynomial dan Hyperparameter Tuning, dilakukan Evaluation den
 
 
 ## Model Recommendation
-Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning, karena model ini memiliki nilai Evaluation Matrix yang paling baik dibanding model yang lain. Parameter awal yang kami tentukan untuk model XGB adalah : 
+Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning, karena model ini memiliki nilai Accuracy yang paling baik dibanding model yang lain. Parameter awal yang kami tentukan untuk model XGB adalah : 
 
 ![param](https://user-images.githubusercontent.com/79127874/120598154-1ef9ca00-c470-11eb-86f2-3bdf8b3a40ac.png)
 
@@ -76,6 +76,7 @@ kemudian kami melakukan Random Search untuk mendapatkan parameter terbaik dari P
 - best.params: 'n_estimators' : 500, 'max_depth' : 10, 'learning_rate' : 0.1, 'gamma' : 0.1
 ```
 Setelah melakukan Tuned terhadap model XGB dengan parameter terbaik yang telah didapatkan, diperoleh Evaluation Matrix sebagai berikut.
+
 ![XGB](https://user-images.githubusercontent.com/79127874/120597948-e2c66980-c46f-11eb-83df-44b23a6cf6ee.png)
 
 
