@@ -65,5 +65,5 @@ Setelah melakukan Hyperparameter Tuning, dilakukan Evaluation dengan membandingk
 ![AccuracyScore](https://user-images.githubusercontent.com/79127874/120586898-94f53580-c45e-11eb-8cb4-dd14ae8a1e56.png)
 
 ## Model Recommendation
-Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Polynomial dan Hyperparameter Tuning.
+Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Hyperparameter Tuning.
 
