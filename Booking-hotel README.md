@@ -62,7 +62,7 @@ Base Model yang telah dicoba kemudian diImprove dengan Polynomial dan Hyperparam
 ## Evaluation
 Setelah melakukan Hyperparameter Tuning, dilakukan Evaluation dengan membandingkan nilai Accuracy dari masing-masing model untuk memilih model yang terbaik.
 
-![AccScore](img/AccuracyScore.png)
+![AccuracyScore](https://user-images.githubusercontent.com/79127874/120586898-94f53580-c45e-11eb-8cb4-dd14ae8a1e56.png)
 
 ## Model Recommendation
 Berdasarkan hasil Evaluasi, model yang kami pilih sebagai rekomendasi adalah model XGB_tuned yang telah melalui proses Polynomial dan Hyperparameter Tuning.
